@@ -26,11 +26,11 @@ public class calculator extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jtxtResult = new javax.swing.JTextField();
+        jbtnCE = new javax.swing.JButton();
+        jbtnBS = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jbtnC = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
@@ -51,17 +51,17 @@ public class calculator extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 340, 60));
+        jtxtResult.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jtxtResult.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        getContentPane().add(jtxtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 340, 60));
 
-        jButton1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton1.setText("CE");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 70, 70));
+        jbtnCE.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtnCE.setText("CE");
+        getContentPane().add(jbtnCE, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 70, 70));
 
-        jButton2.setFont(new java.awt.Font("Arial", 3, 48)); // NOI18N
-        jButton2.setText("←");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 70, 70));
+        jbtnBS.setFont(new java.awt.Font("Arial", 3, 48)); // NOI18N
+        jbtnBS.setText("←");
+        getContentPane().add(jbtnBS, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 70, 70));
 
         jButton3.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         jButton3.setText("±");
@@ -72,14 +72,14 @@ public class calculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 70, 70));
 
-        jButton4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton4.setText("C");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jbtnC.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtnC.setText("C");
+        jbtnC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jbtnCActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 70, 70));
+        getContentPane().add(jbtnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 70, 70));
 
         jButton5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jButton5.setText("8");
@@ -180,9 +180,9 @@ public class calculator extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jbtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jbtnCActionPerformed
 
     /**
      * @param args the command line arguments
@@ -220,7 +220,6 @@ public class calculator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -231,15 +230,16 @@ public class calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton jbtnBS;
+    private javax.swing.JButton jbtnC;
+    private javax.swing.JButton jbtnCE;
+    private javax.swing.JTextField jtxtResult;
     // End of variables declaration//GEN-END:variables
 }
