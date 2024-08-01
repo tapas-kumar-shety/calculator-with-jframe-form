@@ -29,24 +29,24 @@ public class calculator extends javax.swing.JFrame {
         jtxtResult = new javax.swing.JTextField();
         jbtnCE = new javax.swing.JButton();
         jbtnBS = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jbtnPM = new javax.swing.JButton();
         jbtnC = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        jbtn8 = new javax.swing.JButton();
+        jbtn7 = new javax.swing.JButton();
+        jbtnPlus = new javax.swing.JButton();
+        jbtn9 = new javax.swing.JButton();
+        jbtn6 = new javax.swing.JButton();
+        jbtnMinus = new javax.swing.JButton();
+        jbtn5 = new javax.swing.JButton();
+        jbtn4 = new javax.swing.JButton();
+        jbtn2 = new javax.swing.JButton();
+        jbtn1 = new javax.swing.JButton();
+        jbtnMultiply = new javax.swing.JButton();
+        jbtn3 = new javax.swing.JButton();
+        jbtnDot = new javax.swing.JButton();
+        jbtn0 = new javax.swing.JButton();
+        jbtnDivide = new javax.swing.JButton();
+        jbtnEquals = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -63,14 +63,14 @@ public class calculator extends javax.swing.JFrame {
         jbtnBS.setText("←");
         getContentPane().add(jbtnBS, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 70, 70));
 
-        jButton3.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jButton3.setText("±");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jbtnPM.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jbtnPM.setText("±");
+        jbtnPM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jbtnPMActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 70, 70));
+        getContentPane().add(jbtnPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 70, 70));
 
         jbtnC.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jbtnC.setText("C");
@@ -81,104 +81,108 @@ public class calculator extends javax.swing.JFrame {
         });
         getContentPane().add(jbtnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 70, 70));
 
-        jButton5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton5.setText("8");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        jbtn8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn8.setText("8");
+        jbtn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                jbtn8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 70, 70));
+        getContentPane().add(jbtn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 70, 70));
 
-        jButton6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton6.setText("7");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jbtn7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn7.setText("7");
+        jbtn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jbtn7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 70, 70));
+        getContentPane().add(jbtn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 70, 70));
 
-        jButton7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton7.setText("+");
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 70, 70));
+        jbtnPlus.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtnPlus.setText("+");
+        getContentPane().add(jbtnPlus, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 70, 70));
 
-        jButton8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton8.setText("9");
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 70, 70));
+        jbtn9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn9.setText("9");
+        getContentPane().add(jbtn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 70, 70));
 
-        jButton9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton9.setText("6");
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 70, 70));
+        jbtn6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn6.setText("6");
+        getContentPane().add(jbtn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 70, 70));
 
-        jButton10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton10.setText("-");
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 70, 70));
+        jbtnMinus.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtnMinus.setText("-");
+        getContentPane().add(jbtnMinus, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 70, 70));
 
-        jButton11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton11.setText("5");
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 70, 70));
+        jbtn5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn5.setText("5");
+        getContentPane().add(jbtn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 70, 70));
 
-        jButton12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton12.setText("4");
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 70, 70));
+        jbtn4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn4.setText("4");
+        getContentPane().add(jbtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 70, 70));
 
-        jButton13.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton13.setText("2");
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 70, 70));
+        jbtn2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn2.setText("2");
+        getContentPane().add(jbtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 70, 70));
 
-        jButton14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton14.setText("1");
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 70, 70));
+        jbtn1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn1.setText("1");
+        getContentPane().add(jbtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 70, 70));
 
-        jButton15.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jButton15.setText("*");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        jbtnMultiply.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jbtnMultiply.setText("*");
+        jbtnMultiply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                jbtnMultiplyActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 70, 70));
+        getContentPane().add(jbtnMultiply, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 70, 70));
 
-        jButton16.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton16.setText("3");
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 70, 70));
+        jbtn3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn3.setText("3");
+        getContentPane().add(jbtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 70, 70));
 
-        jButton17.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jButton17.setText(".");
-        jButton17.setAlignmentY(0.0F);
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 500, 70, 70));
+        jbtnDot.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jbtnDot.setText(".");
+        jbtnDot.setAlignmentY(0.0F);
+        getContentPane().add(jbtnDot, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 500, 70, 70));
 
-        jButton18.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton18.setText("0");
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 70, 70));
+        jbtn0.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtn0.setText("0");
+        getContentPane().add(jbtn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 70, 70));
 
-        jButton19.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton19.setText("/");
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 70, 70));
+        jbtnDivide.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtnDivide.setText("/");
+        getContentPane().add(jbtnDivide, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 70, 70));
 
-        jButton20.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton20.setText("=");
-        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, 70, 70));
+        jbtnEquals.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jbtnEquals.setText("=");
+        getContentPane().add(jbtnEquals, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, 70, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+  private void  EnterNumbers( String q){
+       
+      String nums = jtxtResult.getText() + q ;
+  }
+    
+    private void jbtnPMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPMActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jbtnPMActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jbtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_jbtn7ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void jbtnMultiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnMultiplyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_jbtnMultiplyActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jbtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_jbtn8ActionPerformed
 
     private void jbtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCActionPerformed
         // TODO add your handling code here:
@@ -220,26 +224,26 @@ public class calculator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jbtn0;
+    private javax.swing.JButton jbtn1;
+    private javax.swing.JButton jbtn2;
+    private javax.swing.JButton jbtn3;
+    private javax.swing.JButton jbtn4;
+    private javax.swing.JButton jbtn5;
+    private javax.swing.JButton jbtn6;
+    private javax.swing.JButton jbtn7;
+    private javax.swing.JButton jbtn8;
+    private javax.swing.JButton jbtn9;
     private javax.swing.JButton jbtnBS;
     private javax.swing.JButton jbtnC;
     private javax.swing.JButton jbtnCE;
+    private javax.swing.JButton jbtnDivide;
+    private javax.swing.JButton jbtnDot;
+    private javax.swing.JButton jbtnEquals;
+    private javax.swing.JButton jbtnMinus;
+    private javax.swing.JButton jbtnMultiply;
+    private javax.swing.JButton jbtnPM;
+    private javax.swing.JButton jbtnPlus;
     private javax.swing.JTextField jtxtResult;
     // End of variables declaration//GEN-END:variables
 }
